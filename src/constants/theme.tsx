@@ -3,6 +3,7 @@ const Theme = {
     radius: {
       default: "2px",
       semicircle: "18px",
+      circle: "50px",
     },
   },
 
@@ -23,6 +24,7 @@ const Theme = {
 
   color: {
     background: {
+      ultralight: "#FFFFFF",
       light: "#F1F1F1",
       default: "#FFD836",
       inverted: "#FAFAFA",
@@ -37,17 +39,22 @@ const Theme = {
   font: {
     size: {
       normal: "1.1250em",
+      description: "1.3125em",
+      subtitle: "1.75em",
       title: "2em",
     },
     weight: {
       light: "400",
+      semilight: "500",
       regular: "700",
       bold: "800",
     },
   },
 
   spacing: {
+    alface: "8px",
     abacaxi: "20px",
+    linguica: "24px",
     frango: "28px",
     picanha: "42px",
   },

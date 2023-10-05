@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 };
 
 const raleway = Raleway({
-  weight: "700",
+  weight: ["400", "500", "700", "800"],
   subsets: ["latin"],
   display: "swap",
 });

@@ -1,9 +1,14 @@
 import { BBqTypographyProps } from "@/components/typography/types";
-import { Typography } from "@/components/typography/styled";
+import { Typography, Wrapper } from "@/components/typography/styled";
 
 export default function BBqTypography({
   tag = "p",
+  weight = "bold",
   children,
 }: BBqTypographyProps) {
-  return <Typography tag={tag}>{children}</Typography>;
+  return (
+    <Wrapper $weight={weight}>
+      <Typography tag={tag}>{children}</Typography>
+    </Wrapper>
+  );
 }
