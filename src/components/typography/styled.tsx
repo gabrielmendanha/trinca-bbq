@@ -1,7 +1,6 @@
 "use client";
 
 import styled from "styled-components";
-import theme from "@/constants/theme";
 import { createElement } from "react";
 import {
   BBqTypographyProps,
