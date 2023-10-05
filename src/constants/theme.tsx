@@ -42,6 +42,7 @@ const Theme = {
       description: "1.3125em",
       subtitle: "1.75em",
       title: "2em",
+      supertitle: "2.25em",
     },
     weight: {
       light: "400",

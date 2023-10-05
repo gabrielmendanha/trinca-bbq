@@ -31,21 +31,35 @@ export default function List() {
           >
             <Content>
               <FlexDiv>
-                <BBqTypography tag={"h2"}>{item.date}</BBqTypography>
-                <BBqTypography tag={"span"} weight={"regular"}>
+                <BBqTypography tag={"h2"} size={"subtitle"}>
+                  {item.date}
+                </BBqTypography>
+                <BBqTypography
+                  tag={"span"}
+                  weight={"regular"}
+                  size={"description"}
+                >
                   {item.description}
                 </BBqTypography>
               </FlexDiv>
               <FlexDetailDiv>
                 <Detail>
                   <BBqIcon name={"contact"} />{" "}
-                  <BBqTypography tag={"span"} weight={"light"}>
+                  <BBqTypography
+                    tag={"span"}
+                    weight={"light"}
+                    size={"description"}
+                  >
                     {item.invitees}
                   </BBqTypography>
                 </Detail>
                 <Detail>
                   <BBqIcon name={"moneySign"} />{" "}
-                  <BBqTypography tag={"span"} weight={"light"}>
+                  <BBqTypography
+                    tag={"span"}
+                    weight={"light"}
+                    size={"description"}
+                  >
                     {item.total}
                   </BBqTypography>
                 </Detail>
@@ -58,7 +72,7 @@ export default function List() {
           <ChurrasIconWrapper>
             <BBqIcon name={"bbq"} />
           </ChurrasIconWrapper>
-          <BBqTypography tag={"span"} weight={"regular"}>
+          <BBqTypography tag={"span"} weight={"regular"} size={"description"}>
             Adicionar Churras
           </BBqTypography>
         </NewChurras>

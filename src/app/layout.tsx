@@ -40,7 +40,9 @@ export default function RootLayout({
               <Container>
                 <Content>
                   <Title>
-                    <BBqTypography tag={"h1"}>Agenda de Churras</BBqTypography>
+                    <BBqTypography tag={"h1"} size={"title"}>
+                      Agenda de Churras
+                    </BBqTypography>
                   </Title>
                   <section>{children}</section>
                   <Logo>

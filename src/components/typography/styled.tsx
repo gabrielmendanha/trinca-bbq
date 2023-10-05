@@ -5,25 +5,26 @@ import theme from "@/constants/theme";
 import { createElement } from "react";
 import {
   BBqTypographyProps,
+  BBqTypographySizes,
   BBqTypographyWeights,
 } from "@/components/typography/types";
 
-export const Wrapper = styled.div<{ $weight: string }>`
+export const Wrapper = styled.div<{ $weight: string; $size: string }>`
   h1 {
-    font-size: ${theme.font.size.title};
+    font-size: ${({ $size }) => BBqTypographySizes[$size]};
   }
 
   h2 {
-    font-size: ${theme.font.size.subtitle};
+    font-size: ${({ $size }) => BBqTypographySizes[$size]};
     font-weight: ${({ $weight }) => BBqTypographyWeights[$weight]};
   }
 
   h3 {
-    font-size: ${theme.font.size.description};
+    font-size: ${({ $size }) => BBqTypographySizes[$size]};
   }
 
   span {
-    font-size: ${theme.font.size.description};
+    font-size: ${({ $size }) => BBqTypographySizes[$size]};
     font-weight: ${({ $weight }) => BBqTypographyWeights[$weight]};
   }
 `;
