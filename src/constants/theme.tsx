@@ -30,6 +30,14 @@ const Theme = {
       inverted: "#FAFAFA",
     },
 
+    border: {
+      default: "#998220",
+    },
+
+    decoration: {
+      yellow: "#E5C231",
+    },
+
     font: {
       lightblack: "#000000cc",
       black: "#000",
@@ -54,10 +62,12 @@ const Theme = {
 
   spacing: {
     alface: "8px",
+    paoAlho: "12px",
     abacaxi: "20px",
     linguica: "24px",
     frango: "28px",
     picanha: "42px",
+    fileMignon: "48px",
   },
 
   shadow: {
