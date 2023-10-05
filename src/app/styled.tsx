@@ -20,7 +20,7 @@ export const RelativeDiv = styled.div`
 
 export const Container = styled.div`
   background-color: ${theme.color.background.default};
-  background-image: url("bbq.avif");
+  background-image: url("/bbq.avif");
   padding: ${theme.spacing.frango};
   display: flex;
   position: absolute;
