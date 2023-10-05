@@ -16,10 +16,6 @@ it("redirects user on click", () => {
     },
   } = renderHook(useChurras);
 
-  const event = {
-    preventDefault: jest.fn(),
-  };
-
   displayChurrasDetails(1);
 
   expect(mockRouter).toBeCalledWith("/list/1");
