@@ -7,7 +7,6 @@ import {
   iconHeightSizes,
   iconWidthSizes,
 } from "@/constants/icon";
-import theme from "@/constants/theme";
 
 export const Icon = styled.div<{ name: string }>`
   background-image: url("/icons.webp");
