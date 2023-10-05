@@ -27,6 +27,7 @@ export default function List() {
             key={item.id}
             width={"282px"}
             height={"192px"}
+            hasCursor
             onClick={() => displayChurrasDetails(item.id)}
           >
             <Content>
