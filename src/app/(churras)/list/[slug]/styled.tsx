@@ -75,4 +75,8 @@ export const CreatePerson = styled.div`
   display: flex;
   flex-direction: row;
   gap: ${theme.spacing.paoAlho};
+
+  @media screen and (max-width: ${theme.breakpoints.xm.large}) {
+    flex-direction: column;
+  }
 `;

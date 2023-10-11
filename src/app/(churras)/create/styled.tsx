@@ -19,6 +19,26 @@ export const FormWrapper = styled.div`
   flex-direction: column;
   gap: ${theme.spacing.picanha};
   width: 30%;
+
+  @media screen and (max-width: ${theme.breakpoints.xm.large}) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.sm.small}) {
+    width: 70%;
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.sm.large}) {
+    width: 60%;
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.md.small}) {
+    width: 40%;
+  }
+
+  @media screen and (min-width: ${theme.breakpoints.md.large}) {
+    width: 30%;
+  }
 `;
 
 export const DateWrapper = styled.div`

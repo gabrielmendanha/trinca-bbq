@@ -17,6 +17,13 @@ export const Wrapper = styled.div`
   flex-wrap: wrap;
   height: 60vh;
   gap: ${theme.spacing.linguica};
+
+  @media screen and (max-width: ${theme.breakpoints.xm.large}) {
+    overflow-x: auto;
+    position: relative;
+    justify-content: center;
+    z-index: ${theme.zIndex.modal};
+  }
 `;
 
 export const FlexDiv = styled.div`
