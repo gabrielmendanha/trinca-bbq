@@ -12,11 +12,11 @@ jest.mock("next/navigation", () => ({
 it("redirects user on click", () => {
   const {
     result: {
-      current: { displayChurrasDetails },
+      current: { navigateChurrasDetails },
     },
   } = renderHook(useChurras);
 
-  displayChurrasDetails(1);
+  navigateChurrasDetails(1);
 
   expect(mockRouter).toBeCalledWith("/list/1");
 });

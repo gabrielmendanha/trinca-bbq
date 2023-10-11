@@ -12,23 +12,23 @@ import {
 import BBqCard from "@/components/card";
 import BBqTypography from "@/components/typography";
 import BBqIcon from "@/components/icon";
-import { Churras } from "@/mocks/churras";
 import { useChurras } from "@/hooks/useChurras";
 import { TChurras } from "@/mocks/type";
 
 export default function List() {
-  const { displayChurrasDetails } = useChurras();
+  const { churras, navigateChurrasDetails, navigateChurrasCreate } =
+    useChurras();
 
   return (
     <>
       <Wrapper>
-        {Churras.map((item: TChurras) => (
+        {churras.map((item: TChurras) => (
           <BBqCard
             key={item.id}
             width={"282px"}
             height={"192px"}
             hasCursor
-            onClick={() => displayChurrasDetails(item.id)}
+            onClick={() => navigateChurrasDetails(item.id)}
           >
             <Content>
               <FlexDiv>
@@ -69,7 +69,7 @@ export default function List() {
           </BBqCard>
         ))}
 
-        <NewChurras>
+        <NewChurras onClick={navigateChurrasCreate}>
           <ChurrasIconWrapper>
             <BBqIcon name={"bbq"} />
           </ChurrasIconWrapper>

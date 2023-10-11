@@ -1,6 +1,6 @@
 export interface TChurras {
   id: number;
-  date: string;
+  date: string | undefined;
   description: string;
   invitees: number;
   total: string;

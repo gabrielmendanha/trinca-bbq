@@ -3,4 +3,5 @@ export interface BBqButtonProps {
   width?: "25%" | "50%" | "75%" | "100%";
   height?: "50px" | string;
   type: "button" | "submit";
+  onClick?: () => any;
 }

@@ -6,6 +6,8 @@ export default function BBqInput({
   width = "100%",
   height = "50px",
   margin = "",
+  value = "",
+  onChange = () => {},
 }: BBqInputProps) {
   return (
     <Input
@@ -13,6 +15,8 @@ export default function BBqInput({
       $width={width}
       $height={height}
       $margin={margin}
+      onChange={onChange}
+      value={value}
     />
   );
 }
