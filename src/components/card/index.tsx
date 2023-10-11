@@ -9,7 +9,12 @@ export default function BBqCard({
   children,
 }: BBqCardProps) {
   return (
-    <Card width={width} height={height} hasCursor={hasCursor} onClick={onClick}>
+    <Card
+      width={width}
+      height={height}
+      $hasCursor={hasCursor}
+      onClick={onClick}
+    >
       {children}
     </Card>
   );

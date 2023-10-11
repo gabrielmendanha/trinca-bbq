@@ -3,12 +3,13 @@ export interface TChurras {
   date: string | undefined;
   description: string;
   invitees: number;
-  total: string;
+  total: number;
   persons: TChurrasPerson[];
 }
 
 export interface TChurrasPerson {
   id: number;
   name: string;
-  contribution: string;
+  contribution: number;
+  hasContributed: boolean;
 }

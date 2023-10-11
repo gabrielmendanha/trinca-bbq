@@ -1,12 +1,12 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useState } from "react";
-import { Churras } from "@/mocks/churras";
+import { useContext, useState } from "react";
 import { Dayjs } from "dayjs";
+import { ChurrasContext } from "@/context/churras";
 
 export function useChurras() {
-  const [churras, setChurras] = useState(Churras);
+  const { churras, setChurras } = useContext(ChurrasContext);
   const [title, setTitle] = useState("");
   const [extraData, setExtraData] = useState("");
   const [date, setDate] = useState<Dayjs | null>(null);
@@ -32,7 +32,7 @@ export function useChurras() {
         ? date?.toDate().toLocaleDateString()
         : new Date(Date.now()).toLocaleDateString(),
       invitees: 0,
-      total: "R$0",
+      total: 0,
       persons: [],
     });
 

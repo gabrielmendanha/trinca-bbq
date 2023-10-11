@@ -6,7 +6,7 @@ import theme from "@/constants/theme";
 export const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  height: auto;
+  min-height: 80vh;
   margin-top: ${theme.spacing.linguica};
   margin-bottom: ${theme.spacing.linguica};
 `;
@@ -48,7 +48,6 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   align-items: center;
-  cursor: pointer;
   display: flex;
   justify-content: space-between;
   height: 45px;
@@ -56,6 +55,9 @@ export const ListItem = styled.li`
 `;
 
 export const ContributionWrapper = styled.div<{ isChecked: boolean }>`
+  align-items: center;
+  display: flex;
+  gap: ${theme.spacing.paoAlho};
   span {
     text-decoration: ${({ isChecked }) =>
       isChecked ? "line-through" : "inherit"};
@@ -64,5 +66,13 @@ export const ContributionWrapper = styled.div<{ isChecked: boolean }>`
 
 export const NameContainer = styled.div`
   display: flex;
+  cursor: pointer;
   gap: ${theme.spacing.abacaxi};
+`;
+
+export const CreatePerson = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: ${theme.spacing.paoAlho};
 `;

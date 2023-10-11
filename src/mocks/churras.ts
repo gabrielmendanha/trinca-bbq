@@ -1,102 +1,60 @@
 import { TChurras } from "@/mocks/type";
 
+export const mockChurras = [
+  {
+    id: 1,
+    date: "01/12",
+    description: "Níver do Gui",
+    invitees: 3,
+    total: 40,
+    persons: [
+      {
+        id: 1,
+        name: "Alice",
+        contribution: 20.0,
+        hasContributed: true,
+      },
+      {
+        id: 2,
+        name: "Alice",
+        contribution: 20.0,
+        hasContributed: false,
+      },
+      {
+        id: 3,
+        name: "Alice",
+        contribution: 20.0,
+        hasContributed: true,
+      },
+    ],
+  },
+];
+
 export const Churras: TChurras[] = [
   {
     id: 1,
     date: "01/12",
     description: "Níver do Gui",
-    invitees: 18,
-    total: "R$280",
+    invitees: 3,
+    total: 40,
     persons: [
       {
         id: 1,
         name: "Alice",
-        contribution: "R$20,00",
+        contribution: 20.0,
+        hasContributed: true,
       },
       {
         id: 2,
         name: "Alice",
-        contribution: "R$20,00",
+        contribution: 20.0,
+        hasContributed: false,
       },
       {
         id: 3,
         name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 4,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 5,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 6,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 7,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 8,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 9,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 10,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 11,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 12,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 13,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 14,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 15,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 16,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 17,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 18,
-        name: "Alice",
-        contribution: "R$20,00",
+        contribution: 20.0,
+        hasContributed: true,
       },
     ],
   },
@@ -104,98 +62,38 @@ export const Churras: TChurras[] = [
     id: 2,
     date: "23/12",
     description: "Final de Ano",
-    invitees: 28,
-    total: "R$400",
+    invitees: 5,
+    total: 20,
     persons: [
       {
         id: 1,
         name: "Alice",
-        contribution: "R$20,00",
+        contribution: 20.0,
+        hasContributed: false,
       },
       {
         id: 2,
         name: "Alice",
-        contribution: "R$20,00",
+        contribution: 20.0,
+        hasContributed: false,
       },
       {
         id: 3,
         name: "Alice",
-        contribution: "R$20,00",
+        contribution: 20.0,
+        hasContributed: true,
       },
       {
         id: 4,
         name: "Alice",
-        contribution: "R$20,00",
+        contribution: 20.0,
+        hasContributed: false,
       },
       {
         id: 5,
         name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 6,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 7,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 8,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 9,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 10,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 11,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 12,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 13,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 14,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 15,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 16,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 17,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 18,
-        name: "Alice",
-        contribution: "R$20,00",
+        contribution: 20.0,
+        hasContributed: false,
       },
     ],
   },
@@ -203,98 +101,14 @@ export const Churras: TChurras[] = [
     id: 3,
     date: "06/01",
     description: "Sem motivo",
-    invitees: 28,
-    total: "R$140",
+    invitees: 1,
+    total: 0,
     persons: [
       {
         id: 1,
         name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 2,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 3,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 4,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 5,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 6,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 7,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 8,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 9,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 10,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 11,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 12,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 13,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 14,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 15,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 16,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 17,
-        name: "Alice",
-        contribution: "R$20,00",
-      },
-      {
-        id: 18,
-        name: "Alice",
-        contribution: "R$20,00",
+        contribution: 20.0,
+        hasContributed: false,
       },
     ],
   },
